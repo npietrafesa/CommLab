@@ -10,9 +10,10 @@
   <h1>30MFF</h1>
 </div>
 <div class="navigation">
-  <a class="active" href="home.html">Home</a>
+  <a class="active" href="index.html">Home</a>
   <a href="film.html">30MFF</a>
   <a href="about.html">About</a>
+  <a class="light-dark-mode" href="javascript:toggleLightDarkMode()">Light/Dark Mode</a>
 </div>
 <div class="subtitle">
   <h1>Home</h1>
@@ -26,6 +27,12 @@
     place. College is a place where young adults mature greatly and prepare for the real world, and NYUAD is no
     exception in that matter. </p>
   <p>Head over to the 30MFF tab to see our video. You can also go to About to see more info about what 30MFF is.</p>
+  <script>
+    function toggleLightDarkMode() {
+      let element = document.body;
+      element.classList.toggle("light-mode");
+    }
+  </script>
 </div>
 </body>
 </html>

@@ -10,9 +10,10 @@
   <h1>30MFF</h1>
 </div>
 <div class="navigation">
-  <a href="home.html">Home</a>
+  <a href="index.html">Home</a>
   <a href="film.html">30MFF</a>
   <a class="active" href="about.html">About</a>
+  <a class="light-dark-mode" href="javascript:toggleLightDarkMode()">Light/Dark Mode</a>
 </div>
 <div class="subtitle">
   <h1>About</h1>
@@ -40,6 +41,12 @@
   <p>
     Have any questions? You can email us at nsp8305@nyu.edu or by phone at +971 50 000 0001
   </p>
+  <script>
+    function toggleLightDarkMode() {
+      let element = document.body;
+      element.classList.toggle("light-mode");
+    }
+  </script>
 </div>
 </body>
 </html>
